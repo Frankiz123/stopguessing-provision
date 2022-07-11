@@ -1,0 +1,70 @@
+{
+  "_from": "react-native-show-hide-toggle-box",
+  "_id": "react-native-show-hide-toggle-box@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-k+Dom2NWzygM46bGJwhppCO/HXE=",
+  "_location": "/react-native-show-hide-toggle-box",
+  "_phantomChildren": {
+    "code-point-at": "1.1.0",
+    "decamelize": "1.2.0",
+    "is-stream": "1.1.0",
+    "isexe": "2.0.0",
+    "load-json-file": "2.0.0",
+    "lodash": "4.17.15",
+    "lru-cache": "4.1.5",
+    "normalize-package-data": "2.5.0",
+    "npm-run-path": "2.0.2",
+    "number-is-nan": "1.0.1",
+    "p-finally": "1.0.0",
+    "path-type": "2.0.0",
+    "prop-types": "15.7.2",
+    "require-directory": "2.1.1",
+    "set-blocking": "2.0.0",
+    "shebang-command": "1.2.0",
+    "signal-exit": "3.0.3",
+    "strip-eof": "1.0.0",
+    "which-module": "2.0.0"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-show-hide-toggle-box",
+    "name": "react-native-show-hide-toggle-box",
+    "escapedName": "react-native-show-hide-toggle-box",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-show-hide-toggle-box/-/react-native-show-hide-toggle-box-1.0.1.tgz",
+  "_shasum": "93e0e89b6356cf280ce3a6c6270869a423bf1d71",
+  "_spec": "react-native-show-hide-toggle-box",
+  "_where": "D:\\stop\\__MACOSX (2)",
+  "bugs": {
+    "url": "https://github.com/jvaclavik/react-native-show-hide-toggle-box/issues"
+  },
+  "bundleDependencies": false,  
+  "deprecated": false,
+  "description": "React Native Toggle Box for showing/hiding content with sliding effect. Should looks like classical SlideToggle from jQuery.",
+  "homepage": "https://github.com/jvaclavik/react-native-show-hide-toggle-box#readme",
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "toggle",
+    "display",
+    "visibility"
+  ],
+  "license": "MIT",
+  "main": "./ToggleBox.js",
+  "name": "react-native-show-hide-toggle-box",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvaclavik/react-native-show-hide-toggle-box.git"
+  },
+  "version": "1.0.1"
+}

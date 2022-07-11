@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Stop Guessing</string>
+<string name="facebook_app_id">613132315994057</string>
+<string name="fb_login_protocol_scheme">fb[613132315994057]</string>
+    <string name="name445">TODO</string>
+</resources>

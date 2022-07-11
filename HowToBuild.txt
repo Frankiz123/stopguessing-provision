@@ -1,0 +1,57 @@
+HOW TO BUILD StopGuessing APPS
+
+These build instructions assume your development environment is an Intel Mac running MacOS 10.15 Catalina. As of 10 May 2021, there are some incompatibilities with CocoaPods that have prevented me from building on an ARM Mac with Big Sur.
+
+First step is to clone this repository. If you are reading these instructions, you've made it that far!
+
+PREREQUISITES
+
+The StopGuessing apps are based on React Native and CocoaPods. You need to install the following command-line tools using Homebrew, first:
+
+brew install yarn
+brew install cocoapods
+
+Next install the required Node Modules. Do this from a terminal windows in the StopGuessing root directory:
+
+cd StopGuessing
+yarn install
+
+BUILDING iOS APP
+
+After installing CocoaPods, install the required Pods from the local Podfile in the iOS directory using the command below:
+
+cd StopGuessing/ios/
+pod install
+
+This is a one-time setup. Note, this step fails on my M1 MacBook Pro running MacOS Big Sur!
+
+1) Build main.jsbundle. From the StopGuessing root directory, execute this command in a terminal window:
+
+npm run build:ios
+
+2) open iOS/Stop.xcworkspace in Xcode 12.4 (Do not open Stop.xcodeproj directly!)
+3) Select Stop project in Xcode project navigator
+4) Select Product -> Run from menu bar, or click Run button in Xcode toolbar.
+
+Steps for macbook on M1 and Xcode 12.3/12.4 : 
+
+1) npm i 
+2) cd ios && pod install && cd ..
+3) npm run build:ios
+4) open in Xcode Stop.xcodeproj and run it 
+
+# if you will get a error with pods: 
+ - pod deintegrate
+ - pod install --repo-update
+
+To build the Android version:
+
+1) Open android/build.gradle in Android Studio.
+2) I had to fix some obsolete package references in node_modules; see https://stackoverflow.com/questions/40380519/error-package-com-android-annotations-does-not-exist
+
+cd .. # Run this command from StopGuessing root directory containing node_modules
+npm install --save-dev jetifier
+npx jetify
+
+At this point, Android StopGuessing app actually launches on my Google Pixel XL, but many UI screens are laid out incorrectly.  Do we have the right source code?  Did I miss a build step?
+

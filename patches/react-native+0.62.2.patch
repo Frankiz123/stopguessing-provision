@@ -1,0 +1,26 @@
+diff --git a/node_modules/react-native/Libraries/Animated/release/.npmignore b/node_modules/react-native/Libraries/Animated/release/.gitignore
+similarity index 100%
+rename from node_modules/react-native/Libraries/Animated/release/.npmignore
+rename to node_modules/react-native/Libraries/Animated/release/.gitignore
+diff --git a/node_modules/react-native/Libraries/Image/RCTUIImageViewAnimated.m b/node_modules/react-native/Libraries/Image/RCTUIImageViewAnimated.m
+index 21f1a06..4d1a66a 100644
+--- a/node_modules/react-native/Libraries/Image/RCTUIImageViewAnimated.m
++++ b/node_modules/react-native/Libraries/Image/RCTUIImageViewAnimated.m
+@@ -276,6 +276,9 @@ - (void)displayLayer:(CALayer *)layer
+     layer.contentsScale = self.animatedImageScale;
+     layer.contents = (__bridge id)_currentFrame.CGImage;
+   }
++  else {
++    [super displayLayer:layer];
++  }
+ }
+ 
+ #pragma mark - Util
+diff --git a/node_modules/react-native/ReactAndroid/src/main/jni/first-party/fbjni/.npmignore b/node_modules/react-native/ReactAndroid/src/main/jni/first-party/fbjni/.gitignore
+similarity index 100%
+rename from node_modules/react-native/ReactAndroid/src/main/jni/first-party/fbjni/.npmignore
+rename to node_modules/react-native/ReactAndroid/src/main/jni/first-party/fbjni/.gitignore
+diff --git a/node_modules/react-native/ReactCommon/hermes/inspector/tools/msggen/.npmignore b/node_modules/react-native/ReactCommon/hermes/inspector/tools/msggen/.gitignore
+similarity index 100%
+rename from node_modules/react-native/ReactCommon/hermes/inspector/tools/msggen/.npmignore
+rename to node_modules/react-native/ReactCommon/hermes/inspector/tools/msggen/.gitignore
